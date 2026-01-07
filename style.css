@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background: #f2f2f2;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 24 px;
+}
+
+.owner-name {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+section {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    color: #b30000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order {
+    text-align: center;
+}
+
+.order a {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.order a:hover {
+    background: darkgreen;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#langBtn {
+    position: static;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    padding: 6px 10px;
+    font-size: 14px;
+    background: #b30000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+#address,
+#phone {
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width:600px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .site-title h1 {
+        font-size: 18px;
+
+    }
+
+    .owner-name {
+        font-size: 11px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 8px;
+        padding: 10px 16px;
+    }
+
+    #langBtn {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .header-flex {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .site-title h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .site-title p {
+        font-size: 13px;
+        margin: 2px 0 0;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    section {
+        max-width: 900px;
+        margin: 20px auto;
+    }
+}
