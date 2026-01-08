@@ -30,9 +30,9 @@ function changeLang(){
 
         document.getElementById("contactTitle").innerText="सम्पर्क करे";
 
-        document.getElementById("address").innerText="पता:";
+        document.getElementById("address").innerText="पता: अम्बेडकर वार्ड ललमटिया सिवनी";
 
-        document.getElementById("phone").innerText="मोबाईल:";
+        document.getElementById("phone").innerText="मोबाईल: 9752631952";
 
         document.getElementById("footerText").innerText="© 2026 न्यू स्टुडेंट टैलर्स";
 
@@ -44,5 +44,6 @@ function changeLang(){
         location.reload();
     }
 }
+
 
 
